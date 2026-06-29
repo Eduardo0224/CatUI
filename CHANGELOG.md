@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `ImageCacheService` — actor-based image caching with memory + disk persistence (SHA-256 hashed filenames)
+- `ImageCacheServiceProtocol` — public protocol for cache dependency injection and testability
+- `CatImageView` now uses `ImageCacheService.shared` internally instead of `AsyncImage` (no cache)
+- `CatImageView(maxWidth:)` — new optional parameter to control cached image width in points
+- Public `ImageCacheService.shared` singleton — consumers can call cache directly
+- `GITFLOW.md` — Git workflow and branching strategy for CatUI
+
 ### Fixed
 
 - Access control: `Color.cat*`, `Font.cat*`, `UIColor.cat*` tokens were `internal` — now `public`
