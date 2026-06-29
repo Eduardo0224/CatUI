@@ -5,7 +5,7 @@ import UIKit
 // UIKit counterpart to Color.cat* tokens. Same palette, same values.
 // Use in UIView/UIViewController code. For SwiftUI use Color.cat*.
 
-extension UIColor {
+public extension UIColor {
 
     // MARK: - Accent
 

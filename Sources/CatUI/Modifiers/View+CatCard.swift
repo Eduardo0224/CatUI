@@ -5,11 +5,11 @@ import SwiftUI
 /// Applies card styling to any view: padding, background, corner radius, shadow.
 /// Use on VStack/HStack containers that need card appearance.
 /// Do NOT apply on CatCardView — it already has this styling built in.
-struct CatCardModifier: ViewModifier {
-    var cornerRadius: CGFloat = CatRadius.radius12
-    var shadowRadius: CGFloat = 4
+public struct CatCardModifier: ViewModifier {
+    public var cornerRadius: CGFloat = CatRadius.radius12
+    public var shadowRadius: CGFloat = 4
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .padding(CatSpacing.spacing16)
             .background(Color.catSurfaceSecondary)

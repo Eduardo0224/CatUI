@@ -11,7 +11,7 @@ import UIKit
 //   #FFCEDE  Light pink (accent subtle)
 //   #FFFFFF  White
 
-extension Color {
+public extension Color {
 
     // MARK: - Accent
 
