@@ -10,7 +10,7 @@ import SwiftUI
 //   Headline: 17pt     |  Body: 17pt      |  Callout: 16pt   |  Subhead: 15pt
 //   Footnote: 13pt     |  Caption 1: 12pt |  Caption 2: 11pt
 
-extension Font {
+public extension Font {
 
     // MARK: - Display & Titles (Heavy Comp weight)
 

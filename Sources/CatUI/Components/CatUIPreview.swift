@@ -6,26 +6,26 @@ import SwiftUI
 /// Apply as a trait: `#Preview(traits: .catUIFonts, .sizeThatFitsLayout) { ... }`
 ///
 /// No need to wrap content in CatUIPreview { } — just add the trait.
-struct CatUIPreviewModifier: PreviewModifier {
+public struct CatUIPreviewModifier: PreviewModifier {
 
     // MARK: - Context
 
-    typealias Context = Void
+    public typealias Context = Void
 
     // MARK: - Functions
 
-    static func makeSharedContext() async throws {
+    public static func makeSharedContext() async throws {
         CatFontRegistration.registerAll()
     }
 
-    func body(content: Content, context: Context) -> some View {
+    public func body(content: Content, context: Context) -> some View {
         content
     }
 }
 
 // MARK: - PreviewTrait Extension
 
-extension PreviewTrait where T == Preview.ViewTraits {
+public extension PreviewTrait where T == Preview.ViewTraits {
 
     /// Registers CatUI custom fonts (Coolvetica) before the preview renders.
     @MainActor
