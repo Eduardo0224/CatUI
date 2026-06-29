@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Nothing pending.
+### Fixed
+
+- Access control: `Color.cat*`, `Font.cat*`, `UIColor.cat*` tokens were `internal` — now `public`
+- Access control: `CatCardModifier` struct + body + properties were `internal` — now `public`
+- Access control: `CatUIPreviewModifier` methods + `.catUIFonts` trait were `internal` — now `public`
 
 ---
 
